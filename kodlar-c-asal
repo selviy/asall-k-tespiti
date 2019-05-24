@@ -3,24 +3,35 @@
 
 int main()
 {
+	f();
+
+	while(1){getchar();}
+}
+int f()
+{
 	int a,b=2, c=0,i=0;
 	printf("sayi");
 	scanf("%d",&a);
-  	while(1)
+
+	while(1)
 	{
+		if(a==2)
+		{
+			printf("asal\n");
+			break;	
+		}
 		if(a%b==0)
 		{
-			printf("asal degil");
+			printf("asal degil\n");
 			break;		
 		}
 		c=a/b;
 		if(c<b)
 		{
-			printf("asal");
+			printf("asal\n");
 			break;		
 		}
 		b++;
 	}
-
-	while(1){getchar();}
+	f();
 }
