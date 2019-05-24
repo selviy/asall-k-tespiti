@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main()
+{
+	int a,b=2, c=0,i=0;
+	printf("sayi");
+	scanf("%d",&a);
+  	while(1)
+	{
+		if(a%b==0)
+		{
+			printf("asal degil");
+			break;		
+		}
+		c=a/b;
+		if(c<b)
+		{
+			printf("asal");
+			break;		
+		}
+		b++;
+	}
+
+	while(1){getchar();}
+}
